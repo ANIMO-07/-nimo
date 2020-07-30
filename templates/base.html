@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title and other Info -->
+    <title>ÁNIMO</title>
+
+    <!-- Stylesheet -->
+    <style>
+        body {
+            background: #3f3f3f;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        .rbtn {
+            padding: 8px;
+            color: white;
+            font-size: 24px; /* Change here for size */
+            text-decoration: none;
+        }
+        #top-nav {
+            margin: 8px;
+        }
+        #main-content {
+            max-width: 800px;
+            margin: auto;
+            padding: 24px 16px;
+            background: rgba(0, 0, 0, 0.13);
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+        }
+        input {
+            color: white;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid white !important;
+            padding: 8px;
+            margin: 4px;
+            font-size: 20px;  /* Change here for input size */
+        }
+        input:focus {
+            outline: none;
+        }
+        button {
+            color: #6ab0f3;
+            padding: 6px 12px;
+            margin: 12px;
+            font-weight: 400;
+            background: #242424;
+            display: inline-block;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 2px;
+            font-size: 18px; /* Channge here for font size of buttons */
+            cursor: pointer;
+        }
+        button:hover {
+            background: #161616;
+        }
+        button:focus {
+            outline: 1px solid #328fe6;
+        }
+        #img-logo{
+            width: 180px;
+        }
+        @media (max-width: 576px){
+            #img-logo{
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main"></div>
+        <div id="top-nav" style="display: flex; flex-direction: row;">
+            <div id="logo-header"><img id="img-logo" src="https://pc.iitmandi.co.in/img/kamandpromptlogo.svg"></div>
+            <div id="right-menu" style="margin-left: auto;">
+                <a class="rbtn" href="/leaderboard">Leaderboard</a>
+                <a class="rbtn" href="/rules">Rules</a>
+            </div>
+        </div>
+    
+        <div id="main-content">
+            <!-- Heading -->
+            <h2 style="padding-left: 32px; color: rgb(23, 218, 23);">Here is Your Question!</h2>
+            
+            <!-- Here is your question -->
+            <h1 id="question" style="text-align: center;">Guess the Picture?</h1>
+
+            <!-- Here add the image -->
+            <div id="image-container" style="text-align: center;"><img style="max-width: 100%;" src="https://avatars2.githubusercontent.com/u/55916430?s=400&u=fce4959b83b4ce72ffe797d828dc0b24571454bb&v=4"></div>
+
+            <!-- Form for answering -->
+            <form id="answer-container" style="text-align: center;">
+                <input id="answer-input" style="width: 90%;">
+                <button id="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

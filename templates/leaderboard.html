@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block links %}
+<a class="rbtn" href="/">Game</a>
+<a class="rbtn" href="/rules">Rules</a>
+{% endblock %}
+
+{% block body %}
+{% for item in values %}
+    <p>{{item.name}} &emsp; {{item.level}}</p>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block links %}
+<a class="rbtn" href="/rules">Rules</a>
+<a class="rbtn" href="/leaderboard">Leaderboard</a>
+{% endblock %}
+
+{% block body %}
+<h2>Question {{n}}</h2>
+
+{% if (n%2==1 and n<18) %}
+    <h3 style="padding-left: 12px; color: aquamarine;">Senior Exclusive</h3>
+{% endif %}
+
+<image src={{url_for('static', filename=qfile)}}></image>
+
+<form action="#" method="POST" id="answer-container">
+    <h3 id="question" style="padding-left: 10px;">Answer:</h2>
+    <p><Input type="text" name="ans" id="Name" style="width: 96%;"  style="text-align: center;"></p>
+    <p><Input type="submit" value="Submit"></p>
+</form>
+{% endblock %}

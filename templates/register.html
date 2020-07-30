@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block links %}
+<a class="rbtn" href="/login">Login</a>
+{% endblock %}
+
+{% block body %}
+<form action="#" method="POST" id="answer-container">
+    <h2 id="question" style="padding-left: 10px;">Roll Number:</h2>
+    <p><Input type="text" name="rn" id="Name" style="width: 96%;"  style="text-align: center;"></p>
+    <h2 id="question" style="padding-left: 10px;">Username:</h2>
+    <p><Input type="text" name="nm" id="Name" style="width: 96%;"  style="text-align: center;"></p>
+    <h2 id="question" style="padding-left: 10px;">Password:</h2>
+    <p><Input type="password" name="pwd" id="Key" style="width: 96%;"  style="text-align: center;"></p>
+    <p><Input type="submit" value="Submit"></p>
+</form>
+{% endblock %}
