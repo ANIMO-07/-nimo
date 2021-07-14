@@ -1,1 +1,1 @@
-# -nimo
+# Ánimo - the cryptic hunt
