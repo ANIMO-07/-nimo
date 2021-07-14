@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title and other Info -->
-    <title>ÁNIMO</title>
+    <title>au-revoir</title>
 
     <!-- Stylesheet -->
     <style>
@@ -20,7 +20,7 @@
         .rbtn {
             padding: 8px;
             color: white;
-            font-size: 24px; /* Change here for size */
+            font-size: 24px;
             text-decoration: none;
         }
         #top-nav {
@@ -40,7 +40,7 @@
             border-bottom: 1px solid white;
             padding: 8px;
             margin: 4px;
-            font-size: 20px;  /* Change here for input size */
+            font-size: 20px;
         }
         input:focus {
             outline: none;
@@ -59,7 +59,7 @@
             background-image: none;
             border: 1px solid transparent;
             border-radius: 2px;
-            font-size: 18px; /* Channge here for font size of buttons */
+            font-size: 18px;
             cursor: pointer;
         }
         button:hover {
@@ -85,7 +85,7 @@
 <body>
     <div id="main">
         <div id="top-nav" style="display: flex; flex-direction: row;">
-            <div id="logo-header"><img id="img-logo" src="https://pc.iitmandi.co.in/img/kamandpromptlogo.svg"></div>
+            <div id="logo-header"><img id="img-logo" src={{url_for('static', filename='animo1-01.png')}}></div>
             <div id="right-menu" style="margin-left: auto;">
                 {% block links %}{% endblock %}
             </div>

@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<form action="#" method="POST" id="answer-container">
+    <h2 id="question" style="padding-left: 10px;">Password:</h2>
+    <Input type="password" name="pwd" id="Key" style="width: 96%;"  style="text-align: center;">
+    <h1 style="padding-left: 10px;">Details</h2>
+    <h2 id="question" style="padding-left: 10px;">Roll Number:</h2>
+    <Input type="text" name="rn" id="Name" style="width: 96%;"  style="text-align: center;" value="{{rn if rn}}">
+    <h2 id="question" style="padding-left: 10px;">Name:</h2>
+    <Input type="text" name="nm" id="Name" style="width: 96%;"  style="text-align: center;" value="{{nm if nm}}">
+    <h2 id="question" style="padding-left: 10px;">Pass:</h2>
+    <Input type="text" name="ps" id="Name" style="width: 96%;"  style="text-align: center;" value="{{ps if ps}}">
+    <h2 id="question" style="padding-left: 10px;">Score:</h2>
+    <Input type="text" name="sc" id="Name" style="width: 96%;"  style="text-align: center;" value="{{sc if sc}}">
+    <h2 id="question" style="padding-left: 10px;">Level:</h2>
+    <Input type="text" name="lvl" id="Name" style="width: 96%;"  style="text-align: center;" value="{{lvl if lvl}}">
+    <h2 id="question" style="padding-left: 10px;">Upd8:</h2>
+    <Input type="text" name="boioboi" id="Name" style="width: 96%;"  style="text-align: center;">
+    <p><button><Input type="submit" value="Submit" style="border-bottom: 0px;"></button></p>
+</form>
+
+{% endblock %}

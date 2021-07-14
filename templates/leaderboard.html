@@ -6,7 +6,19 @@
 {% endblock %}
 
 {% block body %}
-{% for item in values %}
-    <p>{{item.name}} &emsp; {{item.level}}</p>
-{% endfor %}
+<h2>Leaderboard</h2>
+<br>
+<br>
+<table style="width:100%">
+    <tr>
+      <th style="text-align: left;">Username</th>
+      <th style="text-align: left;">Score</th> 
+    </tr>
+    {% for item in values %}
+        <tr>
+            <td>{{item.name}}</td>
+            <td>{{item.score}}</td>
+        </tr>
+    {% endfor %}
+</table>
 {% endblock %}

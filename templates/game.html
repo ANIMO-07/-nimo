@@ -7,16 +7,18 @@
 
 {% block body %}
 <h2>Question {{n}}</h2>
-
+<!---
 {% if (n%2==1 and n<18) %}
     <h3 style="padding-left: 12px; color: aquamarine;">Senior Exclusive</h3>
 {% endif %}
-
-<image src={{url_for('static', filename=qfile)}}></image>
+--->
+<div id="image-container" style="text-align: center;">
+<image style="width: 40%;" src={{url_for('static', filename=qfile)}}></image>
+</div>
 
 <form action="#" method="POST" id="answer-container">
-    <h3 id="question" style="padding-left: 10px;">Answer:</h2>
-    <p><Input type="text" name="ans" id="Name" style="width: 96%;"  style="text-align: center;"></p>
-    <p><Input type="submit" value="Submit"></p>
+    <h3 id="question" style="padding-left: 10px; margin-bottom: 0px;">Answer:</h3>
+    <Input type="text" name="ans" id="Name" style="width: 96%;"  style="text-align: center;">
+    <p><button ><Input type="submit" value="Submit" style="border-bottom: 0px;"></button></p>
 </form>
 {% endblock %}
